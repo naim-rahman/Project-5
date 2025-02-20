@@ -11,7 +11,143 @@
 </head>
 
 <body>
+    <header class="sticky top-0">
+        <!-- Navbar start -->
+        <nav class="bg-yellow-50">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <a href="blog.html" class="btn rounded-3xl shadow-lg bg-green-400 text-base px-7">Blog</a>
+                </div>
+                <div class="navbar-center flex">
+                    <img class="size-8 mr-3" src="./assets/logo.png" alt="">
+                    <h3 class="hidden lg:flex md:flex font-semibold text-2xl">Donate Bangladesh</h3>
+                </div>
+                <div class="navbar-end flex space-x-2">
+                    <img class="size-5" src="./assets/coin.png" alt="">
+                    <p class="text-xl font-semibold">
+                        <span id="my-balance">10000</span>
+                    </p>
+                    <p class="text-xl font-semibold">BDT</p>
+                </div>
+            </div>
+            <!-- Button start -->
+            <div class="flex align-middle justify-center bg-slate-200 py-10 gap-5">
+                <a id="donation-tab" class="btn rounded-3xl shadow-lg bg-green-400 text-base px-7">Donation</a>
+                <a id="history-tab" class="btn rounded-3xl shadow-lg text-base px-7">History</a>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+    </header>
+    <main>
+        <div id="donation-body" class=" ">
+            <!-- flood donation start -->
+            <div
+                class="flex flex-col lg:flex-row align-middle justify-between border-gray-100 border-2 rounded-lg gap-8 container mx-auto p-8 mt-5">
+                <div class="flex-1 p-4">
+                    <img class="w-full lg:h-[410px]" src="./assets/noakhali.png" alt="">
+                </div>
+                <div class="flex-1 p-4">
+                    <div class="flex rounded-md align-middle justify-center py-4 px-6 w-min bg-gray-100 space-x-2">
+                        <img class="size-5" src="./assets/coin.png" alt="">
+                        <p class="text-lg font-semibold">
+                            <span id="flood-balance">5500</span>
+                        </p>
+                        <p class="text-lg font-semibold">BDT</p>
+                    </div>
+                    <h3 class="font-semibold text-xl my-4">Donate for Flood at Noakhali, Bangladesh</h3>
+                    <p class="text-sm"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        relief efforts and making a positive impact on the lives of those in need.</p>
 
+                    <input id="input-flood-money" class="w-full p-4 my-5 bg-gray-100 rounded-md" type="number"
+                        placeholder="Write Donation Amount" name="">
+                    <a id="add-donation" class="btn rounded-lg w-full bg-green-400 shadow-lg text-base px-auto">
+                        Donation Now
+                    </a>
+                </div>
+            </div>
+            <!-- Flood donation end -->
+            <!-- Relief donation start -->
+            <div
+                class="flex flex-col lg:flex-row align-middle justify-between border-gray-100 border-2 rounded-lg gap-8 container mx-auto p-8 mt-5">
+                <div class="flex-1 p-4">
+                    <img class="w-full lg:h-[410px]" src="./assets/feni.png" alt="">
+                </div>
+                <div class="flex-1 p-4">
+                    <div class="flex rounded-md align-middle justify-center py-4 px-6 w-min bg-gray-100 space-x-2">
+                        <img class="size-5" src="./assets/coin.png" alt="">
+                        <p class="text-lg font-semibold">
+                            <span id="relief-balance">5500</span>
+                        </p>
+                        <p class="text-lg font-semibold">BDT</p>
+                    </div>
+                    <h3 class="font-semibold text-xl my-4">Donate for Food Relief in Feni,Bangladesh</h3>
+                    <p class="text-sm"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        relief efforts and making a positive impact on the lives of those in need.</p>
+
+                    <input id="input-relief-money" class="w-full p-4 my-5 bg-gray-100 rounded-md" type="number"
+                        placeholder="Write Donation Amount" name="">
+                    <a id="add-feni-donation"
+                        class="btn rounded-lg w-full bg-green-400 shadow-lg text-base px-auto">Donation Now</a>
+                </div>
+            </div>
+            <!-- Relief donation end -->
+            <!-- Quota AID donation start -->
+            <div
+                class="flex flex-col lg:flex-row align-middle justify-between border-gray-100 border-2 rounded-lg gap-8 container mx-auto p-8 mt-5">
+                <div class="flex-1 p-4">
+                    <img class="w-full lg:h-[410px]" src="./assets/quota-protest.png" alt="">
+                </div>
+                <div class="flex-1 p-4">
+                    <div class="flex rounded-md align-middle justify-center py-4 px-6 w-min bg-gray-100 space-x-2">
+                        <img class="size-5" src="./assets/coin.png" alt="">
+                        <p class="text-lg font-semibold">
+                            <span id="aid-balance">5500</span>
+                        </p>
+                        <p class="text-lg font-semibold">BDT</p>
+                    </div>
+                    <h3 class="font-semibold text-xl my-4">Aid for Injured in the Quota Movement</h3>
+                    <p class="text-sm"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        relief efforts and making a positive impact on the lives of those in need.</p>
+
+                    <input id="input-aid-money" class="w-full p-4 my-5 bg-gray-100 rounded-md" type="number"
+                        placeholder="Write Donation Amount" name="">
+                    <a id="add-aid-donation"
+                        class="btn rounded-lg w-full bg-green-400 shadow-lg text-base px-auto">Donation Now</a>
+                </div>
+            </div>
+            <!-- Quota AID donation end -->
+        </div>
+        <!-- History Section -->
+        <div id="history" class="history-section hidden px-4">
+            <h3
+                class="flex align-middle justify-center font-semibold text-2xl border-gray-100 border-2 rounded-lg container mx-auto p-7 mt-5">
+                Donation History
+            </h3>
+            <div id="history-list" class="px-4">
+
+            </div>
+        </div>
+        <!-- JS File -->
+        <script src="./JS/index.js"> </script>
+    </main>
+    <footer class="bg-yellow-50 h-28 mt-10">
+        
+    </footer>
 </body>
 
 </html>
