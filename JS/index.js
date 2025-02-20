@@ -36,5 +36,17 @@ function processBalance(inputId, userBalanceId, targetBalanceId, donationPurpose
   updateElementText(userBalanceId, updatedUserBalance);
   updateElementText(targetBalanceId, updatedTargetBalance);
 
+  // Create history entry...
+  const historyItem = document.createElement("div");
+  historyItem.classList = "flex flex-col align-middle container mx-auto p-7 mt-5 border-gray-100 border-2 rounded-lg justify-between";
+
+  historyItem.innerHTML = `
+    <P class="font-semibold text-lg">${donationAmount} Taka is Donated for ${donationPurpose}, Bangladesh</P>
+    <P class="font-semibold text-lg">Date: ${new Date().toLocaleString()}</p>
+  `;
+
+  const historyContainer = document.getElementById("history-list");
+  historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+
   alert("Donation successful!");
 }
