@@ -50,3 +50,25 @@ function processBalance(inputId, userBalanceId, targetBalanceId, donationPurpose
 
   alert("Donation successful!");
 }
+
+// Add event listeners to buttons with specific donation purposes....
+document
+  .getElementById("add-donation")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    processBalance("input-flood-money", "my-balance", "flood-balance", "Flood at Noakhali");
+  });
+
+document
+  .getElementById("add-feni-donation")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    processBalance("input-relief-money", "my-balance", "relief-balance", "Food Relief in Feni");
+  });
+
+document
+  .getElementById("add-aid-donation")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    processBalance("input-aid-money", "my-balance", "aid-balance", "Aid for Quota Movement");
+  });
