@@ -72,3 +72,29 @@ document
     event.preventDefault();
     processBalance("input-aid-money", "my-balance", "aid-balance", "Aid for Quota Movement");
   });
+
+// Button switching...
+const donationTab = document.getElementById("donation-tab");
+const historyTab = document.getElementById("history-tab");
+
+historyTab.addEventListener("click", function () {
+
+  historyTab.classList.add("bg-green-400");
+
+  donationTab.classList.remove("bg-green-400");
+
+  document.getElementById("donation-body").classList.add("hidden");
+  document.getElementById("history").classList.remove("hidden")
+
+});
+
+donationTab.addEventListener("click", function () {
+
+  donationTab.classList.add("bg-green-400");
+
+  historyTab.classList.remove("bg-green-400");
+
+  document.getElementById("donation-body").classList.remove("hidden");
+  document.getElementById("history").classList.add("hidden")
+
+});
