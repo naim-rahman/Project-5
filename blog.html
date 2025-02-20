@@ -6,12 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-05</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+    <header class="sticky top-0">
+        <nav class="bg-yellow-50">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <a href="index.html" class="btn rounded-3xl bg-green-400 text-base px-7">Home</a>
+                </div>
+                <div class="navbar-center flex">
+                    <img class="size-8 mr-3" src="./assets/logo.png" alt="">
+                    <h3 class="hidden lg:flex md:flex font-semibold text-2xl">Donate Bangladesh</h3>
+                </div>
+                <div class="navbar-end flex space-x-2">
+                    <img class="size-5" src="./assets/coin.png" alt="">
+                    <p id="my-balance" class="text-xl font-semibold">10000</p>
+                    <p class="text-xl font-semibold">BDT</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto p-8">
+        <h2 class="font-extrabold text-4xl my-10">Important FAQ <i class="fa-solid fa-question fa-bounce fa-xl"></i>
+        </h2>
+        <div class="border border-gray-300 rounded-md">
+            <div class="collapse collapse-arrow border-b rounded-none border-gray-300">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the DOM?</div>
+                <div class="collapse-content">
+                    <p>The DOM (Document Object Model) is a programming interface that represents an HTML or XML
+                        document as a tree structure. It allows JavaScript to dynamically manipulate, modify, and
+                        interact with webpage elements.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border rounded-none border-gray-300 border-gr">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How to select an element in the DOM using JavaScript?
+                </div>
+                <div class="collapse-content">
+                    <p>Elements can be selected using methods like getElementById, querySelector, and querySelectorAll,
+                        which allow access to specific elements based on their ID, class, or tag name.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border rounded-none border-gray-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How to add an event listener to an element?</div>
+                <div class="collapse-content">
+                    <p>An event listener is added using addEventListener, which binds a specific event (like click or
+                        input) to an element and executes a function when the event occurs.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border rounded-none border-gray-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How to create and append a new element in the DOM?</div>
+                <div class="collapse-content">
+                    <p>A new element can be created using createElement, modified with properties like textContent, and
+                        then added to the DOM using appendChild or insertBefore.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border rounded-none border-gray-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How to change the content of an HTML element using
+                    JavaScript?</div>
+                <div class="collapse-content">
+                    <p>The content of an HTML element can be modified using properties like innerHTML or textContent,
+                        which allow setting or updating text inside an element dynamically.</p>
+                </div>
+            </div>
+        </div>
 
+        <script src="./JS/index.js"> </script>
+
+    </main>
+    <footer class="bg-yellow-50 h-28 mt-10">
+
+    </footer>
 </body>
 
 </html>
